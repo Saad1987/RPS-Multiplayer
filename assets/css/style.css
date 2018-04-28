@@ -1,0 +1,79 @@
+body {
+
+    background-color: lightgreen;
+}
+
+header {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1{
+
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#player1Container, #player2Container, #status {
+
+    height: 250px;
+    border: 2px solid black;
+   
+}
+
+#chatRoom{
+
+    width: 1000px;
+    height: 350px;
+    background-color: ivory;
+    margin: 10px auto;
+}
+
+.panelChoice{
+
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.panelChoice:hover{
+
+border: 1px solid blue; 
+color: blue;
+cursor: pointer;
+}  
+
+.wl {
+
+    font-size: 20px;
+    
+}
+
+h2{
+
+    font-size: 20px;
+    color: darkred;
+    font-weight: 700;
+}
+
+
+.big {
+
+    font-size: 60px;
+    font-style: italic;
+    
+}
+
+.centered{
+
+    padding: 50px;
+}
