@@ -391,11 +391,7 @@ $(document).ready(function () {
 
     }
 
-    if ((!player1) && (!player2)){
-
-      database.ref("/chat/").remove();
-
-    }
+  
 
     // Get a key for the join chat entry
     var msg = userName + " has joined!";
@@ -427,7 +423,13 @@ database.ref("Players").on("child_removed", function (snapshot) {
 	var chatKey = database.ref().child("/chat/").push().key;
 
 	// Disconnection chat entry
-	database.ref("/chat/" + chatKey).set(msg);
+  database.ref("/chat/" + chatKey).set(msg);
+  
+  if ((!player1) && (!player2)){
+
+    database.ref("/chat/").remove();
+
+  }
 });
 
 
